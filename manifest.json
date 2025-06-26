@@ -1,0 +1,22 @@
+{
+  "name": "Best Western Red Hills Hotel",
+  "short_name": "Red Hills Hotel",
+  "description": "Your gateway to Zion, Bryce Canyon, and Grand Canyon in Kanab, Utah.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f8f9fa",
+  "theme_color": "#1e3a8a",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "scope": "/"
+}
