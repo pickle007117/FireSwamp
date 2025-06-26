@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e3a8a">
+  <meta name="description" content="Best Western Red Hills Hotel in Kanab, Utah - Your gateway to Zion, Bryce Canyon, and Grand Canyon.">
+  <title>Best Western Red Hills Hotel - Kanab, Utah</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    header {
+      background-color: #1e3a8a;
+      color: #fff;
+      width: 100%;
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+    }
+    main {
+      max-width: 600px;
+      padding: 2rem;
+      text-align: center;
+    }
+    img.logo {
+      width: 120px;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      margin-top: auto;
+      padding: 1rem;
+      color: #555;
+      font-size: 0.9em;
+    }
+    .restaurant-section {
+      margin-top: 2rem;
+    }
+    .restaurant-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .restaurant-tile {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: left;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .restaurant-tile:hover {
+      transform: scale(1.05);
+    }
+    .restaurant-tile h3 {
+      margin: 0 0 0.5rem;
+      color: #1e3a8a;
+      font-size: 1.2em;
+    }
+    .restaurant-tile p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #333;
+    }
+    .restaurant-tile a {
+      color: #1e3a8a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .restaurant-tile a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="icons/icon-192x192.png" alt="Best Western Red Hills Hotel Logo" class="logo">
+    <h1>Best Western Red Hills Hotel</h1>
+    <h2>Kanab, Utah</h2>
+  </header>
+  <main>
+    <p>Your gateway to Zion, Bryce Canyon, and Grand Canyon.</p>
+    <p>Enjoy quality accommodations, amenities, and adventure from our prime location.</p>
+    <p><strong>Book your stay today!</strong></p>
+    <section class="restaurant-section">
+      <h2>Local Dining</h2>
+      <p>Explore Kanab's best restaurants, all within walking distance of our hotel.</p>
+      <div class="restaurant-grid">
+        <div class="restaurant-tile">
+          <h3>Rocking V Cafe</h3>
+          <p>Creative American cuisine with vegetarian and gluten-free options. Try the bison meatloaf or duck with cherry sauce.</p>
+          <p><a href="https://rockingvcafe.com" target="_blank">View Menu</a> (0.3 miles)</p>
+        </div>
+        <div class="restaurant-tile">
+          <h3>Peekaboo Canyon Wood Fired Kitchen</h3>
+          <p>Wood-fired pizzas and fresh entrees in a cozy setting. Perfect for casual dining.</p>
+          <p><a href="https://peekaboocanyon.com" target="_blank">View Menu</a> (0.1 miles)</p>
+        </div>
+        <div class="restaurant-tile">
+          <h3>Kanab Creek Bakery</h3>
+          <p>European-style pastries, croissants, and sandwiches for breakfast or lunch.</p>
+          <p><a href="https://kanabcreekbakery.com" target="_blank">View Menu</a> (0.2 miles)</p>
+        </div>
+        <div class="restaurant-tile">
+          <h3>Sego Restaurant</h3>
+          <p>Upscale fusion with crab cakes, lamb chops, and craft cocktails.</p>
+          <p><a href="https://segokanab.com" target="_blank">View Menu</a> (0.4 miles)</p>
+        </div>
+        <div class="restaurant-tile">
+          <h3>Houston’s Trail’s End</h3>
+          <p>Western-themed diner with hearty pancakes, burgers, and homemade pies.</p>
+          <p><a href="https://houstonstrailsend.com" target="_blank">View Menu</a> (0.3 miles)</p>
+        </div>
+        <div class="restaurant-tile">
+          <h3>Fusion House</h3>
+          <p>Asian fusion with curries, noodles, and unique flavors.</p>
+          <p><a href="#" onclick="alert('Menu not available online. Visit in person or call +1 435-644-8868.');">Menu Info</a> (0.3 miles)</p>
+        </div>
+        <div class="restaurant-tile">
+          <h3>Brown Box</h3>
+          <p>Casual deli with sandwiches, wraps, and baked goods.</p>
+          <p><a href="#" onclick="alert('Menu not available online. Visit in person or check Yelp.');">Menu Info</a> (0.3 miles)</p>
+        </div>
+        <div class="restaurant-tile">
+          <h3>The Soda Fountain</h3>
+          <p>Indian-inspired dishes like curries and naan, with refreshing drinks.</p>
+          <p><a href="#" onclick="alert('Menu not available online. Visit in person or check local listings.');">Menu Info</a> (0.1 miles)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    © 2025 Best Western Red Hills Hotel. All rights reserved.
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service Worker Registered'))
+        .catch(err => console.error('Service Worker Error:', err));
+    }
+  </script>
+</body>
+  </html>
